@@ -26,7 +26,7 @@ if acc3<85:
         print("MAAF KARDO")
         exit()
     os.system("sed -i '/softmax/ i {}' /code/dlcode.py".format(y))
-    os.system("curl -u admin:redhat$ http://192.168.43.30:8080/view/Task-03%20MLOps/job/Launch_Container/build?token=vikash")
+    os.system("curl -u jenkins:redhat$ http://192.168.43.30:8080/view/Task-03%20MLOps/job/Launch_Container/build?token=vikash")
     acc = os.popen("cat /home/code/accuracy.txt")
     acc1 = acc.read()
     print(acc1)
