@@ -32,6 +32,7 @@ if acc3<85:
     print(acc1)
     acc2 = acc1.rstrip()
     print(acc2)
+    acc2=int(acc2)
     acc3 = float(acc2)
 else:
     print("ACCURACY ABOVE 80")
