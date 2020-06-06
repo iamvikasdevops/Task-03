@@ -7,7 +7,7 @@ from keras.models import Sequential
 from sklearn.model_selection import train_test_split
 
 #reading the dataset
-dataset = pd.read_csv('/home/code/wines.csv')
+dataset = pd.read_csv('wines.csv')
 
 # pre-processing & cleaning the dataset
 y = dataset['Class']
@@ -30,8 +30,8 @@ accuracy = accuracy[1]*100
 
 # storing accuracy
 import os
-os.system("sudo touch /home/code/accuracy.txt")
-os.system("echo {} > /home/code/accuracy.txt".format(accuracy))
+os.system("notepad accuracy.txt")
+os.system("echo {} > accuracy.txt".format(accuracy))
 
 # saving the model to send to the client
-model.save('/code/multiclassNN.h5')
+model.save('multiclassNN.h5')
