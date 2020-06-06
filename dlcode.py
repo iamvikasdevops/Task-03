@@ -1,4 +1,4 @@
-# libraries
+# required libraries
 import pandas as pd
 from keras.optimizers import Adam
 from keras.layers import Dense
@@ -29,8 +29,8 @@ accuracy = accuracy[1]*100
 
 # storing accuracy
 import os
-os.system("sudo touch /code/accuracy.txt")
-os.system("echo {} > /code/accuracy.txt".format(accuracy))
+os.system("sudo touch /home/code/accuracy.txt")
+os.system("echo {} > /home/code/accuracy.txt".format(accuracy))
 
 # saving the model to send to the client
 model.save('/code/multiclassNN.h5')
