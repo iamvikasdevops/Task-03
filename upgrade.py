@@ -1,3 +1,4 @@
+## file is not created by me
 import os
 
 acc = os.popen("cat /home/accuracy.txt")
