@@ -6,7 +6,7 @@ from keras.models import Sequential
 from sklearn.model_selection import train_test_split
 
 #reading the dataset
-dataset = pd.read_csv('/code/wines.csv')
+dataset = pd.read_csv('/home/code/wines.csv')
 
 # pre-processing & cleaning the dataset
 y = dataset['Class']
