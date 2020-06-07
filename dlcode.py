@@ -30,7 +30,7 @@ accuracy = accuracy[1]*100
 
 # storing accuracy
 import os
-os.system("sudo touch accuracy.txt")
+os.system("touch accuracy.txt")
 os.system("echo {} > accuracy.txt".format(accuracy))
 
 # saving the model to send to the client
